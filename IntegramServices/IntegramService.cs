@@ -10,8 +10,7 @@ namespace IntegramServices
 {
     public class IntegramServices
     {
-
-        public static void NotificarTelegram(string autor, string mensagem)
+        private static void NotificarTelegram(string autor, string mensagem)
         {
             const string CANAL_KEY = "csH95I4r9QL";
             string urlCanal = "https://integram.org/" + CANAL_KEY;
@@ -19,9 +18,7 @@ namespace IntegramServices
 
             WebClient clienteTelegram = new WebClient();
             
-            string resposta = clienteTelegram...UploadString(urlCanal, mensagemJSON);
-
-            string textoDaresposta = clienteTelegram.Encoding.GetString(Encoding.ASCII.GetBytes(resposta));
+            var resposta = clienteTelegram.UploadData(urlCanal, "POST", Encoding.UTF8.GetBytes(mensagemJSON));
         }
 
         public bool EnviarAlerta(string autor, string mensagem)
