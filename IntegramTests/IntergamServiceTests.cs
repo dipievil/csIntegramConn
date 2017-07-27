@@ -14,7 +14,7 @@ namespace IntegramServices.Tests
         [TestMethod()]
         public void NotificarTelegramTest()
         {
-            IntegramServices srvIntegram = new IntegramServices();
+            IIntegramServices srvIntegram = new IntegramServices();
             Assert.IsTrue(srvIntegram.EnviarAlerta("dipi","Teste"));
         }
     }
