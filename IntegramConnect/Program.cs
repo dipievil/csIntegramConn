@@ -10,7 +10,7 @@ namespace IntegramConnect
     {
         static void Main(string[] args)
         {
-            IIntegramService integramSrv = new IntegramConnect();
+            IIntegramServices integramSrv = new IntegramConnect();
             integramSrv.EnviarAlerta("Teste","Meu teste");
         }
     }

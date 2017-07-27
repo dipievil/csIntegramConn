@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace IntegramServices
 {
-    public class IntegramServices
+    public class IntegramServices : IIntegramServices
     {
         private static void NotificarTelegram(string autor, string mensagem)
         {
