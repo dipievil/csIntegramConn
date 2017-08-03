@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntegramServices\IntegramConn.csproj">
+      <Project>{9E0D6D54-1908-43CE-9333-93308FCD50F1}</Project>
+      <Name>IntegramConn</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegramConnect", "IntegramConnect\IntegramConnect.csproj", "{C13BEE10-E2AE-4D0A-9DB9-81EF44D7BC4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegramServices", "IntegramServices\IntegramServices.csproj", "{9E0D6D54-1908-43CE-9333-93308FCD50F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegramConn", "IntegramServices\IntegramConn.csproj", "{9E0D6D54-1908-43CE-9333-93308FCD50F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegramTests", "IntegramTests\IntegramTests.csproj", "{9800CA1D-C830-4607-A879-CFF5502E5707}"
 EndProject

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IntegramConn;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,8 @@ namespace IntegramConnect
     {
         static void Main(string[] args)
         {
-            IIntegramServices integramSrv = new IntegramConnect();
-            integramSrv.EnviarAlerta("Teste","Meu teste");
+            IIntegramServices integramSrv = new IntegramService();
+            integramSrv.EnviarAlerta("dipi","Meu teste");
         }
     }
 }

@@ -59,9 +59,9 @@
       <Project>{c13bee10-e2ae-4d0a-9db9-81ef44d7bc4d}</Project>
       <Name>IntegramConnect</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IntegramServices\IntegramServices.csproj">
+    <ProjectReference Include="..\IntegramServices\IntegramConn.csproj">
       <Project>{9E0D6D54-1908-43CE-9333-93308FCD50F1}</Project>
-      <Name>IntegramServices</Name>
+      <Name>IntegramConn</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
