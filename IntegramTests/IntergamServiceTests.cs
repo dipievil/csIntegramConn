@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using IntegramServices;
+using IntegramConn;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntegramServices.Tests
+namespace IntegramConn.Tests
 {
     [TestClass()]
     public class IntergamServiceTests
@@ -14,8 +14,8 @@ namespace IntegramServices.Tests
         [TestMethod()]
         public void NotificarTelegramTest()
         {
-            IIntegramServices srvIntegram = new IntegramServices();
-            Assert.IsTrue(srvIntegram.EnviarAlerta("dipi","Teste"));
+            IIntegramServices srvIntegram = new IntegramService();
+            Assert.IsTrue(srvIntegram.EnviarAlerta("dipi","Mensagem de teste de integração do Integram com o c#"));
         }
     }
 }

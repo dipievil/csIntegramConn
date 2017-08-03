@@ -6,15 +6,15 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntegramServices
+namespace IntegramConn
 {
-    public class IntegramServices
+    public class IntegramService : IIntegramServices
     {
         private static void NotificarTelegram(string autor, string mensagem)
         {
-            const string CANAL_KEY = "csH95I4r9QL";
+            const string CANAL_KEY = "ci8tA2mq4Q1";
             string urlCanal = "https://integram.org/" + CANAL_KEY;
-            string mensagemJSON = "{\"" + autor +"\":\""+mensagem+"\"}";
+            string mensagemJSON = "{\"text\":\"*" + autor + "*: " + mensagem+"\"}";
 
             WebClient clienteTelegram = new WebClient();
             
@@ -29,8 +29,7 @@ namespace IntegramServices
             {
                 NotificarTelegram(autor,mensagem);
                 retornoAlerta = true;
-            } catch (Exception e)
-            {
+            } catch {
                 retornoAlerta = false;
             }
 
